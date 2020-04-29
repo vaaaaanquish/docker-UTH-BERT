@@ -28,12 +28,10 @@ def tokenize_text(mecab, text):
 
 
 if __name__ == "__main__":
-    print('[START]make mecab tagger')
     mecab = make_mecab_tagger()
-    print('[DONE]make mecab tagger')
     print('[START]tokenize input.txt')
     with open('./input.txt', 'r') as fr:
         with open('./tokenized_input.txt', 'w') as fw:
             for x in fr:
-                fw.write(tokenize_text(mecab, x) + '\n')
+                fw.write(tokenize_text(mecab, x))
     print('[DONE]tokenize input.txt')

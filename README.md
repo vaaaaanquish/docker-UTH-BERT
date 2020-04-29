@@ -1,13 +1,13 @@
 # Docker for UTH-BERT
 
-東京大学大学院 医学系研究科 医療AI開発講座より公開されているBERT学習済みモデルであるUTH-BERTを動かすためのスクリプト群です。  
+東京大学大学院 医学系研究科 医療AI開発講座より公開されているBERT学習済みモデルであるUTH-BERTを動かすためのDockerfileとスクリプト群です。  
   
 UTH-BERT: https://ai-health.m.u-tokyo.ac.jp/uth-bert
 
 
 # Usage
 
-以下のコマンドでdockerコンテナを作成し動かします。mecab、neologd、J-MeDic(万病辞書)とgoogle-researchのbertモデルrepogitoryが入り、活用できる状態となります。
+以下のコマンドでdockerコンテナを作成し動かします。mecab、neologd、J-MeDic(万病辞書)とgoogle-researchのbertモデルrepogitoryが入り、活用できる状態のコンテナが生成されbashが走ります。
 
 ```
 docker build -t bert .
@@ -24,7 +24,8 @@ docker run -it bert bash
 ```
 
 output.jsonlファイルがinput.txtに対する特徴量です。  
-inputはサンプルとしてWikipediaのインフルエンザのページを設置しています。
+inputはサンプルとして[Wikipediaのインフルエンザのページ](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B6
+)の一部設置しています。
 ```
 インフルエンザ
 
@@ -32,9 +33,9 @@ inputはサンプルとしてWikipediaのインフルエンザのページを設
 ...
 ```
 
-上記サンプルに対するoutput.jsonlは以下のような形式で出力されます。
+上記サンプルに対するoutput.jsonlは以下のような形式で1行1jsonの形で出力されます。
 ```
-{"linex_index": 0, "features": [ {"token": "インフルエンザ", "layers": {"index": 0, "values": [0.1, 0.2, ...]}}, ... ]}
+{"linex_index": 0, "features": [ {"token": "インフルエンザ", "layers": {"index": -1, "values": [0.1, 0.2, ...]}}, ... ]}
 ...
 ```
 
