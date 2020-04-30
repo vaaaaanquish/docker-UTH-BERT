@@ -45,6 +45,6 @@ inputはサンプルとして[Wikipediaのインフルエンザのページ](htt
 
  - [UTH-BERT](https://ai-health.m.u-tokyo.ac.jp/uth-bert): [Creative Commons 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) (CC BY-NC-SA 4.0)
  - [万病辞書](http://sociocom.jp/~data/2018-manbyo/index.html): [Creative Commons 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) (CC BY 4.0)
- - [mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd): (Apache License, Version 2.0](https://github.com/neologd/mecab-ipadic-neologd/blob/master/COPYING)
+ - [mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd): [Apache License, Version 2.0](https://github.com/neologd/mecab-ipadic-neologd/blob/master/COPYING)
  - [google-research/bert](https://github.com/google-research/bert): [Apache License, Version 2.0](https://github.com/google-research/bert/blob/master/LICENSE)
  - [MeCab](https://taku910.github.io/mecab/): [BSD,LGPL,GPL](https://github.com/taku910/mecab/blob/3a07c4eefaffb4e7a0690a7f4e5e0263d3ddb8a3/mecab/COPYING)
